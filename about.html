@@ -31,11 +31,16 @@
     function promptLanguage() {
         let language = prompt("Please enter your preferred programming language:");
         let name = prompt("Please enter your full name");
+        let name2 = prompt("Please enter your full name");
         if (language) {
-            document.getElementById("languageDisplay").innerText = "Your preferred programming language is: " + language;
+            document.getElementById("languageDisplay").innerText = "Your program is:  " + language;
         }
         if (name) {
-            document.getElementById("nameDisplay").innerText = "Your preferred full name: " + language;
+            document.getElementById("nameDisplay").innerText = "" + name;
+
+        }
+        if (name2) {
+            document.getElementById("nameDisplay2").innerText = " " + name2;
 
         }
 
@@ -125,8 +130,8 @@
                                 <!-- desktop side arrow : documentation/util-misc.html -->
                                 <i class="arrow arrow-lg arrow-start mt-3 border-light d-none d-md-inline-block d-lg-inline-block d-xl-inline-block"></i>
 
-                                <h1 class="h1" id="nameDisplay">
-                                    {{ your name}}
+                                <h1 class="h1" id="nameDisplay2">
+                                    {{ your name }}
                                 </h1>
 
                                 <p class="h5 mb-4">
